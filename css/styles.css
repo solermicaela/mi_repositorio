@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grillaPaginas{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 1200px;
+    grid-template-rows: 10% 87% 3%;
+    grid-template-areas: "header header header header"
+                        "main main main main"
+                        "footer footer footer footer";
+}
+
+.header{
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.navLogo{
+    display: block;
+    width: 68%;
+}
+
+.navbar{
+    display: block;
+    width: 32%;
+    height: 100%;
+}
+
+
+.menu{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgb(242, 145, 196);
+    display: flex;   
+    justify-content: space-around;
+    
+}
+
+nav li{
+    display: block;
+    padding: 2px 4px 2px 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.footer{
+    grid-area: footer;  
+    text-align: right;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      padding-top: 8px;
+      padding-bottom: 10px;
+      padding-right: 12px;
+      color: rgb(27, 27, 27);
+      background-color: rgb(243, 209, 227);   
+}
+
+/*INDEX*/
+
+.background{
+    background-image: url(../babyx.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
+}
+
+.filtroFondo{
+    height: 656px;
+    backdrop-filter: blur(3px);
+    grid-area: unset;
+}
+
+.imgResponsive{
+    display: none;
+}
+
+
+.textoIndex{
+    grid-area: main;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: light;    
+    width: 60%;
+    color: rgb(252, 250, 253);;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+#tituloIndex{
+    color: rgb(252, 250, 253);
+    font-size: 54px;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+
+
+.mainPaginas{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 532px;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: ". area1main area1main ."
+                        "area2main area2main area2main area2main";
+}
+
+.fondoPaginas{
+    background-image: url(../fondo.png);
+    background-size: cover;
+    width: 100%;
+    grid-area: none;
+}
+
+.titulos{
+    color: rgb(13, 13, 14);
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.textoPrincipal{
+    grid-area: area1main;
+}
+
+.textoParrafo{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: light;    
+    width: 60%;
+    color: rgb(13, 13, 14);
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+.galeriaImagenes{
+    width: 282px;
+    height: auto;
+}
+
+
+.imagenes{
+    grid-area: area2main;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
