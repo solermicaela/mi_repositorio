@@ -87,12 +87,19 @@ nav li{
     grid-area: unset;
 }
 
+
 .imgResponsive{
+    display: block;
+    width: 100%;
+    grid-area: main;    
+}
+
+.imgResponsiveDos{
     display: none;
 }
 
-
 .textoIndex{
+    display: block;
     grid-area: main;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -169,5 +176,32 @@ nav li{
 }
 
 
+@media only screen and (min-width:992px){
+    .imgResponsive{
+        display: none;
+    }
+    
+}
 
+@media only screen and (max-width:992px){
+    .background{
+        background-image: url(../fondo.png);
+    }
+}
 
+@media only screen and (max-width:600px){
+    .imgResponsive{
+        display: none;
+    }
+    .imgResponsiveDos{
+        display: block;
+        width: 100%;
+        position: static;
+    }
+    .textoIndex{
+        color: black;
+    }
+    #tituloIndex{
+        color: black;
+    }
+}
