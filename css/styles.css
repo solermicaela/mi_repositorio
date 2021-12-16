@@ -34,16 +34,22 @@
 
 .navLogo{
     display: block;
-    width: 68%;
+    width: 75%;
 }
 
 .navbar{
     display: block;
-    width: 32%;
-    height: 100%;
+    background-color: transparent !important;
+    width: 25%;
 }
 
 
+nav{
+  background-color: transparent;
+  font-family: Roboto;
+}
+
+/*
 .menu{
     font-family: Roboto;
     font-weight: 500;
@@ -54,13 +60,14 @@
     
 }
 
+
 nav li{
     display: block;
     padding: 2px 4px 2px 4px;
     margin-left: 2px;
     margin-right: 2px;
 }
-
+*/
 .links{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -196,7 +203,7 @@ nav li{
 
 .titulos{
     color: rgb(13, 13, 14);
-    font-size: 48px;
+    font-size: xx-large;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: center;
@@ -209,17 +216,21 @@ nav li{
 }
 
 .textoParrafo{
+  font-size: large;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: light;    
-    width: 60%;
     color: rgb(13, 13, 14);
     margin-left: auto;  
     margin-right: auto;
 }
 
+.carousel{
+  grid-area: area2main;
+}
+
 .galeriaImagenes{
-    width: 282px;
+    width: 100%;
     height: auto;
     transition: 1s all;
 }
@@ -409,6 +420,16 @@ nav li{
     .background{
         background-image: url(../fondo.png);
     }
+    .mainPaginas{
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      height: 1044px;
+      grid-template-rows: 20% 30% 50%;
+      grid-template-areas: "area1main area1main area1main area1main"
+                          "area2main area2main area2main area2main"
+                          "area3main area4main area4main area5main";
+  }
 }
 
 @media only screen and (max-width:600px){

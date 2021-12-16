@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baby Nails</title>
-    <link rel="stylesheet" href="css/styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -20,25 +22,42 @@
     <div class="navLogo">
     <a href="index.html"><img src="baby.png" alt="logo de baby nails" class="logo"></a>
     </div>
-<div class="navBar">
-    <nav>    
-     <ul class="menu">
-        <li> <a href="index.html" class="links">HOME</a> </li>             
-        <li> <a href="pages\nailart.html" class="links">Nail Art </a> </li>
-        <li> <a href="pages\press.html" class="links">Press On </a> </li>
-        <li> <a href="pages\esculpidas.html" class="links">Esculpidas</a> </li>
-        <li> <a href="pages\turnos.html" class="links"> TURNOS </a></li>
-     </ul>
-    </nav>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  NAILS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="pages/nailart.html">Nail Art</a></li>
+                  <li><a class="dropdown-item" href="pages/press.html">Press On</a></li>
+                  <li><a class="dropdown-item" href="pages/esculpidas.html">Esculpidas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/turnos.html">TURNOS</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
         </header>
 
         <img src="baby2.jpg" alt="" class="imgResponsive">
 <main class="textoIndex">
     <img src="baby2.jpg" alt="" class="imgResponsiveDos">
         <h1 id="tituloIndex" class="tracking-in-expand">Baby Nails</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores, excepturi neque, vero ipsam minus et, nisi ut rerum quasi ipsum sapiente dolorum illum! Dolores enim fugiat autem porro et iure odio eum impedit sapiente veritatis nobis quas, quam voluptate earum doloribus rerum, ipsum dolorum deserunt? Culpa repellendus dolore facere eveniet in neque aspernatur temporibus, eius, labore voluptatum hic libero sapiente aperiam animi perspiciatis ea nostrum perferendis numquam quod quaerat eos. Nobis placeat accusamus maxime quia vero ullam veniam voluptates, perspiciatis et. Non alias, magni eveniet ab dolor fugiat neque.</p>
-
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sit soluta, modi dicta numquam non nihil, harum nam omnis aliquam sunt dolore provident et nulla similique architecto. Blanditiis cupiditate quo dolor sed natus, architecto numquam repellat nobis sunt harum ullam eligendi aut recusandae quia commodi quam placeat iure dolore, quae saepe totam vero, doloribus ab. Quam, quisquam officiis. Non labore facilis ab fugit placeat quae sit repellat amet fuga error!
+</p>
     </main>
 
     <div class="footer">
@@ -51,6 +70,8 @@
     </div>
     </div>
      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
      </body>
      </html>
      
