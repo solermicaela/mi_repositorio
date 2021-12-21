@@ -77,13 +77,16 @@ nav li{
     color: black;
 }
 
+.main{
+  grid-area: main;
+}
+
 .footer{
     grid-area: footer;  
     text-align: right;
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
       padding-top: 8px;
-      padding-bottom: 10px;
       padding-right: 12px;
       color: rgb(27, 27, 27);
       background-color: rgb(243, 209, 227);   
@@ -113,6 +116,8 @@ nav li{
 
 .imgResponsiveDos{
     display: none;
+    width: 100%;
+    grid-area: main;
 }
 
 .textoIndex{
@@ -188,7 +193,7 @@ nav li{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     height: 1044px;
-    grid-template-rows: 20% 30% 50%;
+    grid-template-rows: 20% 35% 45%;
     grid-template-areas: ". area1main area1main ."
                         "area2main area2main area2main area2main"
                         "area3main area4main area4main area5main";
@@ -255,6 +260,7 @@ nav li{
     color: black;
     grid-area: area3main;
     align-self: baseline;
+    padding-top: 20px;
 }
 
 .slide-in-left {
@@ -433,7 +439,17 @@ nav li{
 }
 
 @media only screen and (max-width:600px){
-    .imgResponsive{
+  .grillaPaginas{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 1200px;
+    grid-template-rows: 10% 87% 3%;
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+}
+
+  .imgResponsive{
         display: none;
     }
     .imgResponsiveDos{
