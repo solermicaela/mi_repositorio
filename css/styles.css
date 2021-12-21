@@ -193,7 +193,7 @@ nav li{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     height: 1044px;
-    grid-template-rows: 20% 35% 45%;
+    grid-template-rows: 20% 40% 40%;
     grid-template-areas: ". area1main area1main ."
                         "area2main area2main area2main area2main"
                         "area3main area4main area4main area5main";
@@ -232,24 +232,17 @@ nav li{
 
 .carousel{
   grid-area: area2main;
+  align-self: center;
 }
-
-.galeriaImagenes{
-    width: 100%;
-    height: auto;
-    transition: 1s all;
-}
-
 
 .imagenes{
-    grid-area: area2main;
-    display: flex;
-    justify-content: space-around;
+    transition: 1s all;
+    max-height: fit-content;
 }
 
-.galeriaImagenes:hover{
+.imagenes:hover{
     filter: opacity(.6);
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 
@@ -419,7 +412,9 @@ nav li{
     .imgResponsive{
         display: none;
     }
-    
+    .carouselDos{
+      display: none;
+    }
 }
 
 @media only screen and (max-width:992px){
@@ -435,6 +430,9 @@ nav li{
       grid-template-areas: "area1main area1main area1main area1main"
                           "area2main area2main area2main area2main"
                           "area3main area4main area4main area5main";
+  }
+  .carouselDos{
+    display: none;
   }
 }
 
@@ -462,5 +460,15 @@ nav li{
     }
     #tituloIndex{
         color: black;
+    }
+  
+    .carouselUno{
+      display: none;
+    }
+    .carouselDos{
+      grid-area: area2main;
+      display: block;
+      height: auto;
+      justify-self: center;
     }
 }
